@@ -1,27 +1,30 @@
 import * as actionTypes from '../../actions/actionTypes';
 import {store} from '../../actions/Users/usersActions';
-export interface State {
+
+// export interface State {
+//     user: [],
+//     // prov: {name:string, description:string, img: string}
+// }
+
+
+// let initState : {
+//     user: []
+
+// }
+
+
+const initState = {
     user: [],
-    // prov: {name:string, description:string, img: string}
+
+    prov: [
+        { name: "tech", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img: "https://picsum.photos/id/0/200/300" },
+        { name: "plumb", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img: "https://picsum.photos/id/1015/200/300" }
+    ]
 }
-
-
-let initState : {
-    user: State
-
-}
-
-// const initState = {
-//     user: null,
-
-//     prov: [
-//         { name: "tech", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img: "https://picsum.photos/id/0/200/300" },
-//         { name: "plumb", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img: "https://picsum.photos/id/1015/200/300" }
-//     ]
     
 // }
-type A = ReturnType<typeof store>; 
-const userReducer = (state:{} = initState, action:A) => {
+// type A = ReturnType<typeof store>; 
+const usersReducer = (state = initState, action:any) => {
     // console.log("action", action);
     console.log("action", action);
     
@@ -48,4 +51,4 @@ const userReducer = (state:{} = initState, action:A) => {
     return state;
 }
 
-export default userReducer;
+export default usersReducer;
