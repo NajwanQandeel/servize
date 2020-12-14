@@ -17,7 +17,6 @@ $(window).on("scroll", function () {
 });
 
 const Navbar = () => {
-<<<<<<< HEAD
   return (
     <header id="nav-bar">
       <nav>
@@ -90,54 +89,3 @@ const Navbar = () => {
   );
 };
 export default Navbar;
-=======
-    return (
-        <header id="nav-bar">
-            <nav>
-                <div className="menu-icon">
-                    <i className="fa fa-bars fa-2x"></i>
-                </div>
-                <div className="logo">
-                    <a href="#">Servize</a>
-                </div>
-                <div className="menu">
-                    <ul>
-                        <li><a href="#">How it Works</a></li>
-                        <li><a href="#">Browse Jobs</a></li>
-                        <li><a href="#">Language</a></li>
-                        <li><a href="#">Become a Seller</a></li>
-                        <li><a href="#">Sign In</a></li>
-                        <li><Link to="/user/forgot-password">Join</Link></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        // <nav className="navbar navbar-expand-lg navbar-dark indigo">
-        //     <a className="navbar-brand" href="#">Navbar w/ text</a>
-        //     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        //         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        //         <span className="navbar-toggler-icon"></span>
-        //     </button>
-        //     <div className="collapse navbar-collapse" id="navbarText">
-        //         <ul className="navbar-nav mr-auto">
-        //             <li className="nav-item active">
-        //                 <a className="nav-link" href="#">Home
-        //     <span className="sr-only">(current)</span>
-        //                 </a>
-        //             </li>
-        //             <li className="nav-item">
-        //                 <a className="nav-link" href="#">Features</a>
-        //             </li>
-        //             <li className="nav-item">
-        //                 <a className="nav-link" href="#">Pricing</a>
-        //             </li>
-        //         </ul>
-        //         <span className="navbar-text white-text">
-        //             Navbar text with an inline element
-        //     </span>
-        //     </div>
-        // </nav>
-    )
-}
-export default Navbar;
->>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3

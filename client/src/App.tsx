@@ -3,17 +3,8 @@ import {BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import Catagories from './components/catagories/Catagories';
-<<<<<<< HEAD
 import Profile from './components/profile/Profile';
 import ProviderSignup from './components/Provider-signup/Provider-signup'
-=======
-import ProviderProf from './components/profiles/ProviderProf';
-import UserProf from './components/profiles/UserProf'
-import Provider from './components/Register-provider/Regester-provider'
-
-// import './App.css';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
->>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3
 import Navbar from "./components/Nav-bar/Nav-bar";
 import Categories from "./components/Categories-container/Categories-container";
 import Footer from "./components/Footer/Footer";
@@ -37,12 +28,7 @@ function App() {
         <Login />
         {/* <ProviderSignup /> */}
         <Catagories />
-<<<<<<< HEAD
         <Search />
-=======
-        <ProviderProf />
-        <UserProf />
->>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3
 
         <Switch>
 
