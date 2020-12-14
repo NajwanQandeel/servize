@@ -12,6 +12,10 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-redux": "^7.1.11",
+<<<<<<< HEAD
+=======
+    "@types/redux-persist": "^4.3.1",
+>>>>>>> 57236b1aeb8935a1aef9e126eaed1630b81ff683
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
     "jquery": "^3.5.1",
