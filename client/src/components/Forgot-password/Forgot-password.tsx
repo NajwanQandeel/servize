@@ -6,17 +6,11 @@ import { Link } from 'react-router-dom';
 const axios = require('axios');
 const $ = require('jquery');
 
-
-
-
-
-
 const ForgotPassword = () => {
-
 
     const dispatch = useDispatch();
     const userInStore = useSelector((state: any) => state.user);
-    console.log ("rootstore",userInStore)
+    console.log("rootstore", userInStore)
     const handleSubmit = (e: any) => {
         e.preventDefault();
         let input = $('#forgot-form').serializeArray();
