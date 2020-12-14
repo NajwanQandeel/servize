@@ -6,8 +6,20 @@ import { Link } from 'react-router-dom';
 const axios = require('axios');
 const $ = require('jquery');
 
+<<<<<<< HEAD
 const ForgotPassword = ()=>{ 
     
+=======
+// Sends a request to change password for a user that forgot the password
+// Using email verification
+
+
+
+
+const ForgotPassword = () => {
+
+
+>>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3
     const dispatch = useDispatch();
     const userInStore = useSelector((state: any) => state.user);
     console.log ("rootstore",userInStore)
@@ -15,7 +27,11 @@ const ForgotPassword = ()=>{
         e.preventDefault();
         let input = $('#forgot-form').serializeArray();
         // console.log(input[0].value);
+<<<<<<< HEAD
         // const [email, setEmail] = useState("") 
+=======
+        // const [email, setEmail] = useState("")
+>>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3
         dispatch(store(input))
         // setEmail("");
 
@@ -46,16 +62,20 @@ const ForgotPassword = ()=>{
             return;
         }
     }
-    
+
     return (
         <div id="reset">
             <button ><Link to="/">Return To Home Page</Link> </button>
-            <form className="forgot-form" id="forgot-form" onSubmit={ handleSubmit}>
+            <form className="forgot-form" id="forgot-form" onSubmit={handleSubmit}>
                 <h1>Forgot Password</h1>
                 <br />
                 <div className="">
                     <label htmlFor="email">Email</label>
+<<<<<<< HEAD
                     <input type="email" className="text" id="email" name="email"/>
+=======
+                    <input type="email" className="text" id="email" name="email" />
+>>>>>>> 7d067803747415ba5ba876cc66b8d13404633eb3
                 </div>
                 <br />
                 <button className="button" >Reset Password</button><br />
